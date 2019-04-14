@@ -1,0 +1,323 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Self Study Project},
+            pdfauthor={Vidyashree Venkatesh},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Self Study Project}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Vidyashree Venkatesh}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-04-13}
+
+\usepackage{booktabs}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{effective-visualization-and-evaluation}{%
+\chapter{Effective Visualization and Evaluation}\label{effective-visualization-and-evaluation}}
+
+Data visualization is the process of representing data graphically in order to identify trends and patterns that would otherwise be unclear or difficult to discern. Data visualization serves two purposes: to bring clarity during analysis and to communicate. Inappropriate visualization can lead to insights during analysis that would have remained hidden. Incorrect visualization leads to confusion, errors, and abandonment among viewers.
+Definition of data visualization relies on three criteria. Data visualization is
+
+Representation based on qualitative or quantitative data, each of these data types requires unique approaches and methods of visualization to optimize the knowledge that they contain.
+
+An image that is representative of the raw data, which requires to examine the data carefully to ensure that the breadth and scope of the visualization does not omit important information, does not over represent certain data, and that the visualization accurately reflects the information contained in the data.
+
+Readable by viewers and supports exploration, examination, and communication of the
+Although these criteria may appear self-evident, in practice it takes thoughtful consideration and application to achieve them.
+\citep{visualization_eval}
+
+Below are a broad set of evaluation criteria put under a framework.
+
+\hypertarget{evaluation-framework}{%
+\section{Evaluation Framework:}\label{evaluation-framework}}
+
+\citep{Eval_Viz}
+
+\begin{itemize}
+\tightlist
+\item
+  Purpose of Visualization: It is important to determine whether the scope of the visualization is to inform or exploration.
+\item
+  Intended Audience: Understand the likely audience.
+\item
+  Visual transformation of data:
+
+  \begin{itemize}
+  \item
+    To examine if the visualization uses the visual components properly; that is to check if the data is properly represented using lines, color, position etc.
+  \item
+    And to verify if it transforms nominal, interval and quantitative information properly.
+  \item
+    Appropriate usage of labels and legends.
+  \end{itemize}
+\item
+  Readability and Communication ability: These criteria enable to understand if the visualization is clear to viewers and helps exploration, examination, and presentation of the data. Involves
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Checking if the visualization is visually appealing/ aesthetically pleasing and immediately understandable.
+  \item
+    Visualization adds value over a textual or tabular representation of data.
+  \item
+    Verify if it provides insight or understanding better than some alternative visualization or it requires excessive cognitive effort and better approach existed.
+  \end{itemize}
+\item
+  Performance of the visualization: To Learn if the visualization successfully highlights important information, while providing context for that information.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Examine if the visualization reveals trends patterns, gaps and allows the viewer to make effective comparisons.
+  \item
+    Examine if the important information highlighted not hidden and to check if the visualization is transforming to mislead or helpfully simplified.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{different-visualizations-to-represent-climate-change-caused-by-human-activity}{%
+\section{Different visualizations to represent climate change caused by human activity:}\label{different-visualizations-to-represent-climate-change-caused-by-human-activity}}
+
+\hypertarget{visualization-1}{%
+\subsection{Visualization 1:}\label{visualization-1}}
+
+\textbf{About the visualization :}
+Global mean surface temperatures from Berkeley Earth (black dots) and modelled influence of all combined natural (blue line) and human (red line) radiative forcings with their respective uncertainties (shaded areas) for the period from 1850 to 2017. The combination of all natural and human forcings (grey line) is also shown.
+
+\includegraphics{_images/Vz1-HumanNatural.png}
+Credit: Carbon Brief
+Source :\citep{Global}
+\textbf{Purpose of Visualization:} To depict Human forcings match observed warming.
+
+\textbf{Intended Audience:} Assumed to be environmental activists and general public.
+
+\textbf{Visual transformation of data:} The visualization incorporates different colors of lines to differentiate the various factors affecting the temperatures and different form (dots) to represent the observed temperatures. The usage of legends is appropriate.
+
+\textbf{Readability and Communication ability:} The visualization is visually appealing and provides insights that human factors have the extreme effect on the increasing temperatures. The color selection of representing the Human effect being `Red' is stressing the intent of the visualization.
+
+\textbf{Performance of the visualization:} The visualization is clear and highlights the important information that warming associated with all human forcings agrees quite well with observed warming, and reveals the trend that uncertainties in human factors increase after 1960.
+
+Overall the Visualization does a good job to convey its intent and is well addressed to any viewer with a minimal effort to understand that humans activities are the cause of the warming.
+
+\hypertarget{visualization-2}{%
+\subsection{Visualization 2:}\label{visualization-2}}
+
+\textbf{About the visualization:} Comparison of observed changes (black lines) in global temperatures (°C) over land (left) and land plus ocean (right) with model projections including both natural plus human influences (red lines) and natural influences only (blue lines). Shadings around model results indicate 5-95\% confidence bands.
+
+\includegraphics{_images/Vz3-LandOcean.png}
+
+Credit: Adapted from IPCC (2013), Fifth Assessment Report
+Source : \citep{Land_Ocean}
+
+\textbf{Purpose of Visualization:} To depict climate models against observations and also to demonstrate that recent observed global warming is resulted largely from human rather than natural influences on climate.
+Intended Audience: Assumed to be environmental activists and general public.
+
+\textbf{Visual transformation of data:} The visualization incorporates different colors to depict different influences on temperature. The legends and labels are apt.
+
+\textbf{Readability and Communication ability:} Although this visualization is successful to show the significance of human influence, the shading around the lines to indicate 5-95\% confidence bands is visually distractive. The incorporation of the shading doesn't provide any insight and hence seem unnecessary. Also in contrast, the first visualization which similarly represents the observed warming in a different form (dots) does a better impact to the viewer than this black line here.
+
+\textbf{Performance of the visualization:} The visualization requires a little effort to track the different lines and learn the influences because of the overlapping of lines and the shadings. However, the visualization is successful to depict that humans are the major contributors to the warming.
+
+Overall although the visualization attempts to well represent its intent , it possess some distractive effects to viewers in contrast to the first visualization.
+
+\hypertarget{visualization-3}{%
+\subsection{Visualization 3:}\label{visualization-3}}
+
+\textbf{About Visualization:} In recent years solar irradiance dipped to the lowest levels recorded during the satellite era. This visualization intends to provides unequivocal evidence that the sun is not the dominant driver of global warming instead it is caused by humans.
+
+\includegraphics{_images/Vz4-Solar.png}
+
+Credit : Credit: NASA/James Hansen
+Source : \citep{NASA}
+
+\textbf{Purpose of Visualization:} To demonstrate that In recent years solar irradiance dipped to the lowest levels
+Intended Audience: Assumed to be environmental activists and general public.
+
+\textbf{Visual transformation of data:} The visualization incorporates different colors and forms to represent different measures of solar irradiance. The legends and labels are well used. The analyzed period is highlighted to seek attention.
+
+\textbf{Readability and Communication ability:} This visualization clearly shows the decrease in solar irradiance in recent years. The visualization depicts too much information to the viewer. It looks overwhelming and hard to understand what the visualization is attempting to convey.
+
+\textbf{Performance of the visualization:} The visualization requires effort to gain the hidden insights that human activity is the underlying cause for the warming. The audience is expected to have some scientific knowledge about solar irradiance and its impact on the climate. However, the visualization is successful to depict the drop of solar irradiance but seems hard for analyzation.
+
+\hypertarget{visualization-4}{%
+\subsection{Visualization 4:}\label{visualization-4}}
+
+\textbf{About Visualization:} This graph, based on the comparison of atmospheric samples contained in ice cores and more recent direct measurements, provides evidence that atmospheric CO2 has increased since the Industrial Revolution.
+
+\includegraphics{_images/Vz6-Co2.png}
+
+Credit: Vostok ice core data/J.R. Petit et al.; NOAA Mauna Loa CO2 record.
+Source:\citep{Co2}
+
+\textbf{Purpose of Visualization:} To represent current warming trend is of particular significance because most of it is extremely likely to be the result of human activity since the mid-20th century and proceeding at a rate that is unprecedented over decades to millennia.
+Intended Audience: Assumed to be environmental activists and general public.
+
+\textbf{Visual transformation of data:} The visualization incorporates highlighting combination of a light color line over a dark background to represent the carbon dioxide level. The legends and labels are well used. The current level is highlighted to seek attention.
+Readability and Communication ability: This visualization clearly shows the steep increase in carbon dioxide since 1950. The visualization provides sufficient textual information to the viewer. Visualization does add value over a textual or tabular representation of data of a long time period.
+
+\textbf{Performance of the visualization:} The visualization requires the viewer to draw insights from the visualization that human activity such as industrialization is the causing factor for the increase in CO2. The visualization is successful to depict the drastic increase of carbon dioxide levels and easily trace the human influence behind the impact.
+
+\textbf{Visualizations against human influence}
+
+\hypertarget{visualization-5}{%
+\subsection{Visualization 5:}\label{visualization-5}}
+
+\textbf{About the visualization:} Out of the entire atmospheric makeup, only one to two percent is made up of greenhouse gases with the majority being nitrogen (about 78 percent) and oxygen (about 21 percent). Of that two percent, ``planet-killing'' carbon dioxide comprises only 3.62 percent while water vapor encompasses 95 percent. And of the amount of carbon dioxide in the atmosphere, humans cause only 3.4 percent of annual CO2 emissions
+
+\includegraphics{_images/Vz5-Against.png}
+
+Credit: Heritage.Org
+Source: \citep{NotHuman}
+
+\textbf{Purpose of Visualization:} To represent CO2 produced by human activity has insignificant contribution to green house effect.
+Intended Audience: Assumed to be environmental activists and general public.
+
+\textbf{Visual transformation of data:} The visualization incorporates matrix chart and different colors to differentiate different contributions. The use of red color is highlighting the insignificance of the human contribution. There is sufficient textual information provided to convey the insights.
+
+\textbf{Readability and Communication ability:} This visualization clearly argues that the humans are negligible source for the greenhouse gases. This visualization provides understanding better than some alternative visualizations like pie chart or bar charts.
+
+\textbf{Performance of the visualization:} The visualization represents only 2\% of the total atmosphere and expects the viewer to imagine the big picture which seems to reduce the capacity of the visualization to represent the strong intent. Also the percentages of overall CO2 (3.62\% of green house gases) and human contribution (3.4\% of CO2) seem hard for viewers to link it with the visualization .Although the visualization is impactful to depict the negligible impact of carbon dioxide from human activity , it requires cognitive effort by viewers to gauze the entire big picture of total atmosphere.
+
+Overall the visualization could have been better if the percentages in text were avoided.
+
+\hypertarget{visualization-6}{%
+\subsection{Visualization 6:}\label{visualization-6}}
+
+\textbf{About the Visualization:} Represents recent changes in solar activity and Cosmic rays.
+
+\includegraphics{_images/Vz7.png}
+
+Source :\citep{ClimateMyth}
+
+\textbf{Purpose of Visualization:} To demonstrate global warming is caused by Sun.
+\textbf{Intended Audience:} Assumed to be environmental activists and general public.
+
+\textbf{Visual transformation of data:} The visualization incorporates only different colors to differentiate various solar activities and extends the color coding the respective scales. The representation of multiple scales makes the visualization complex.
+
+\textbf{Readability and Communication ability:} The visualization represents recent changes in solar activity and Cosmic rays. But it is not easy to draw conclusions or insights directly from the visualization, it requires the viewer to possess knowledge of solar activities.
+
+\textbf{Performance of the visualization:} Although the visualization allows the viewer to make effective comparisons of different solar activities. It requires cognitive effort by viewer to draw conclusions.
+
+\hypertarget{conclusion}{%
+\section{Conclusion:}\label{conclusion}}
+
+On learning the purpose of visual representation of data and developing an evaluation frame work it can be emphasized that effectiveness of a visualization relies on the choice of the data representation and accuracy in conveying the intended information without omitting or over representing the data. Most importantly visualization should incorporate ease of readability, engaging and enlightening.
+
+Evaluation of different visualizations to demonstrate human contributions to the changing climate helped to analyze the strengths and weakness associated with a visualization. It can be inferred that just the colorfulness or amount of information don't turn the visualization effective. If the visualization doesn't add value by highlighting the hidden information, patterns or trends that could not be inferred from its raw representation to its viewer it has failed to accomplish its primary objective of helping to turn data into knowledge.
+
+\hypertarget{visualization-on-warming-stripes}{%
+\chapter{Visualization on Warming stripes}\label{visualization-on-warming-stripes}}
+
+\textbf{1. Annual global temperatures from 1850-2017}
+
+Data Used: HadCURT4 Data
+
+Region Selected : Global(NH+SH)/2, Annual time series of 100 ensemblemembers \url{https://www.metoffice.gov.uk/hadobs/hadcrut4/data/current/download.html}
+
+Tool Used : Tableau
+
+Tableau Workbook Publication : \url{https://10ay.online.tableau.com/\#/site/vidyasvisualizations/workbooks/567765/views}
+
+\includegraphics{_images/Global_WarmingStrips.png}
+
+\emph{Colour scale represents the change in global temperatures covering 1.35°C}
+
+\textbf{2. Annual temperatures for the contiguous USA from 1895-2017}
+
+Data Used:Annual Temperatures of US \citep{NOAA}
+
+Tool Used: Tableau
+
+Tableau Workbook Publication: \url{https://10ay.online.tableau.com/\#/site/vidyasvisualizations/workbooks/567766/views}
+
+\includegraphics{_images/US_WarmingStrips.png}
+
+\emph{The colour scale goes from 50.2°F (dark blue) to 55.0°F (dark red)}
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}
