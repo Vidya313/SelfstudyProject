@@ -11,7 +11,8 @@ description: "This is a self study project of using the bookdown package to writ
 ---
 
 # Effective Visualization and Evaluation
-Data visualization is the process of representing data graphically in order to identify trends and patterns that would otherwise be unclear or difficult to discern. Data visualization serves two purposes: to bring clarity during analysis and to communicate. Inappropriate visualization can lead to insights during analysis that would have remained hidden. Incorrect visualization leads to confusion, errors, and abandonment among viewers.
+Data visualization is the process of representing data graphically in order to identify trends and patterns that would otherwise be unclear or difficult to discern. Data visualization serves two purposes: to bring clarity during analysis and to communicate. Inappropriate visualization can lead to insights during analysis that would have remained hidden. Incorrect visualization leads to confusion, errors, and abandonment among viewers [@Intro].
+
 Definition of data visualization relies on three criteria. Data visualization is 
 
 Representation based on qualitative or quantitative data, each of these data types requires unique approaches and methods of visualization to optimize the knowledge that they contain.
@@ -24,7 +25,7 @@ Although these criteria may appear self-evident, in practice it takes thoughtful
 
 Below are a broad set of evaluation criteria put under a framework.
 
-## Evaluation Framework:
+## Evaluation Framework
 [@Eval_Viz]
 
 * Purpose of Visualization: It is important to determine whether the scope of the visualization is to inform or exploration.
@@ -46,9 +47,9 @@ Below are a broad set of evaluation criteria put under a framework.
     + Examine if the important information highlighted not hidden and to check if the visualization is transforming to mislead or helpfully simplified.
 
 
-## Different visualizations to represent climate change caused by human activity:
+## Different visualizations to represent climate change caused by human activity
 
-### Visualization 1:
+### Visualization 1
 **About the visualization :**
 Global mean surface temperatures from Berkeley Earth (black dots) and modelled influence of all combined natural (blue line) and human (red line) radiative forcings with their respective uncertainties (shaded areas) for the period from 1850 to 2017. The combination of all natural and human forcings (grey line) is also shown. 
 
@@ -65,11 +66,11 @@ Source :[@Global]
 
 **Performance of the visualization:** The visualization is clear and highlights the important information that warming associated with all human forcings agrees quite well with observed warming, and reveals the trend that uncertainties in human factors increase after 1960.
 
-Overall the Visualization does a good job to convey its intent and is well addressed to any viewer with a minimal effort to understand that humans activities are the cause of the warming. 
+Overall the Visualization does a good job to convey its intent and is well addressed to any viewer with a minimal effort to understand that human activities are the cause of the warming. 
 
 
 
-### Visualization 2:
+### Visualization 2
 **About the  visualization:** Comparison of observed changes (black lines) in global temperatures (°C) over land (left) and land plus ocean (right) with model projections including both natural plus human influences (red lines) and natural influences only (blue lines). Shadings around model results indicate 5-95% confidence bands.
 
 ![](images\Vz3-LandOcean.png)
@@ -91,7 +92,7 @@ Overall although the visualization attempts to well  represent its intent , it p
 
 
 
-### Visualization 3:
+### Visualization 3
 **About Visualization:** In recent years solar irradiance dipped to the lowest levels recorded during the satellite era. This visualization intends to provides unequivocal evidence that the sun is not the dominant driver of global warming instead it is caused by humans.
 
 ![](images\Vz4-Solar.png)
@@ -110,7 +111,7 @@ Intended Audience: Assumed to be environmental activists and general public.
 
 
 
-### Visualization 4:
+### Visualization 4
 **About Visualization:** This graph, based on the comparison of atmospheric samples contained in ice cores and more recent direct measurements, provides evidence that atmospheric CO2 has increased since the Industrial Revolution.
 
 ![](images\Vz6-Co2.png)
@@ -125,13 +126,15 @@ Intended Audience: Assumed to be environmental activists and general public.
 Readability and Communication ability:  This visualization clearly shows the steep increase in carbon dioxide since 1950. The visualization provides sufficient textual information to the viewer. Visualization does add value over a textual or tabular representation of data of a long time period.
 
 **Performance of the visualization:** The visualization requires the viewer to draw insights from the visualization that human activity such as industrialization is the causing factor for the increase in CO2. The visualization is successful to depict the drastic increase of carbon dioxide levels and easily trace the human influence behind the impact.
+<br /> 
+
+<br /> 
 
 
 
+**_Below visualizations are against human influence_**
 
-**Visualizations against human influence**
-
-### Visualization 5:
+### Visualization 5
 **About the visualization:** Out of the entire atmospheric makeup, only one to two percent is made up of greenhouse gases with the majority being nitrogen (about 78 percent) and oxygen (about 21 percent). Of that two percent, “planet-killing” carbon dioxide comprises only 3.62 percent while water vapor encompasses 95 percent. And of the amount of carbon dioxide in the atmosphere, humans cause only 3.4 percent of annual CO2 emissions
 
 ![](images\Vz5-Against.png)
@@ -152,14 +155,15 @@ Overall the visualization could have been better if the percentages in text were
 
 
 
-### Visualization 6:
+### Visualization 6
 **About the Visualization:** Represents recent changes in solar activity and Cosmic rays.
 
 ![](images\Vz7.png)
 
 Source :[@ClimateMyth]
 
-**Purpose of Visualization:** To demonstrate global warming is caused by Sun. 
+**Purpose of Visualization:** To demonstrate global warming is caused by Sun.
+
 **Intended Audience:** Assumed to be environmental activists and general public.
 
 **Visual transformation of data:** The visualization incorporates only different colors to differentiate various solar activities and extends the color coding the respective scales. The representation of multiple scales makes the visualization complex.
@@ -170,8 +174,21 @@ Source :[@ClimateMyth]
 
 
 
+## Overall Assessment and Comparision
 
-## Conclusion:
+|  Visualizations |                                   Strength                                   |                                                   Weakness                                                   |
+|:---------------:|:----------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:|
+| Visualization 1 | * Visually Appealing<br /> * Good readability                                      |                                                                                                              |
+| Visualization 2 | * Intent is well Conveyed                                                             |  * Shading around the lines  is Visually distractive.                                                         |
+| Visualization 3 | * Highlights the time period of concern seeking viewers attention            | * Requires Viewer efforts  to gain insights<br />  * Lot of textual data presented                                  |
+| Visualization 4 | * Color selection is appealing.<br />  * Ease of Readability                        |                                                                                                              |
+| Visualization 5 | * Choice of Matrix chart is good to represent the intent                     | * Requires Viewers to connect the textual information  provided to imagine the bigger picture of the intent. |
+| Visualization 6 | * Different colors are employed to  differentiate various solar activities.  | * Different scales are overlapped and hard to track<br />  * Hard to draw conclusions.                              |
+
+Each of the above visualizations have their own story to represent, where some of the them are at their best and some posses both positive and negative aspects in the choice of their design.
+
+
+## Conclusion
 On learning the purpose of visual representation of data and developing an evaluation frame work it can be emphasized that effectiveness of a visualization relies on the choice of the data representation and accuracy in conveying the intended information without omitting or over representing the data. Most importantly visualization should incorporate ease of readability, engaging and enlightening. 
 
 
